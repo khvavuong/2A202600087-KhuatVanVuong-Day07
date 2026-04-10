@@ -1,4 +1,4 @@
-from typing import Callable
+from typing import Callable, Optional
 
 from .store import EmbeddingStore
 
@@ -17,14 +17,24 @@ class KnowledgeBaseAgent:
         self._store = store
         self._llm_fn = llm_fn
 
-    def answer(self, question: str, top_k: int = 3) -> str:
+    def answer(
+        self,
+        question: str,
+        top_k: int = 3,
+        metadata_filter: Optional[dict] = None,
+    ) -> str:
         if not question or not question.strip():
             return "Please provide a valid question."
 
-        results = self._store.search(question, top_k=top_k)
+        if metadata_filter:
+            results = self._store.search_with_filter(
+                question, top_k=top_k, metadata_filter=metadata_filter
+            )
+        else:
+            results = self._store.search(question, top_k=top_k)
 
         if not results:
-            return "I don't know the answer based on the available information."
+            return "Tôi đang tích cực học hỏi thêm để biết câu trả lời dựa trên thông tin hiện có."
 
         context_chunks = [r["content"] for r in results]
         context = "\n\n".join(context_chunks)
