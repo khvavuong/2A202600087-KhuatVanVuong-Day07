@@ -1,0 +1,30 @@
+[
+  {
+    "query": "Bệnh Alzheimer được chẩn đoán chia giai đoạn theo thang điểm MMSE như thế nào?",
+    "gold_answer": "Alzheimer nhẹ: MMSE 21-26, trung bình: 10-20, trung bình nặng: 10-14, nặng: dưới 10.",
+    "expected_source": "alzheimer"
+  },
+  {
+    "query": "Các biện pháp cận lâm sàng nào giúp đánh giá tình trạng mạch máu và tưới máu bàn chân ở người bệnh đái tháo đường?",
+    "gold_answer": "Sử dụng các biện pháp đo ABI (Ankle Brachial Index) và đo TcPO2 (transcutaneous oxygen tension).",
+    "expected_source": "ban-chan-dai-thao-duong",
+    "filter": { "category": "Nội tiết - Đái tháo đường" }
+  },
+  {
+    "query": "Thời gian dùng kháng sinh điều trị áp xe phổi nguyên phát thường kéo dài bao lâu?",
+    "gold_answer": "Thời gian dùng kháng sinh kéo dài từ 4 đến 6 tuần hoặc cho đến khi X-quang ngực sạch hoặc chỉ còn vết sẹo nhỏ.",
+    "expected_source": "ap-xe-phoi"
+  },
+  {
+    "query": "Nguyên nhân hàng đầu gây ra băng huyết sau sinh là gì?",
+    "gold_answer": "Nguyên nhân hàng đầu (hay gặp nhất) gây băng huyết sau sinh là đờ tử cung.",
+    "expected_source": "bang-huyet-sau-sinh",
+    "filter": { "category": "Sản phụ khoa" }
+  },
+  {
+    "query": "Ăn không tiêu thường xuyên có thể là dấu hiệu của những bệnh tiêu hóa nguy hiểm nào?",
+    "gold_answer": "Viêm loét dạ dày, trào ngược dạ dày thực quản, viêm dạ dày, liệt dạ dày, thoát vị hoành, sỏi mật, viêm túi mật, viêm tụy, IBS, bệnh celiac, tắc ruột non, ung thư dạ dày.",
+    "expected_source": "an-khong-tieu",
+    "filter": { "category": "Tiêu hóa - Gan mật" }
+  }
+]

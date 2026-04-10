@@ -1,0 +1,30 @@
+{
+  "alzheimer": {
+    "disease_name": "Bệnh Alzheimer",
+    "category": "Thần kinh"
+  },
+  "an-khong-tieu": {
+    "disease_name": "Ăn không tiêu",
+    "category": "Tiêu hóa - Gan mật"
+  },
+  "ap-xe-hau-mon": {
+    "disease_name": "Áp xe hậu môn",
+    "category": "Tiêu hóa - Hậu môn trực tràng"
+  },
+  "ap-xe-phoi": {
+    "disease_name": "Áp xe phổi",
+    "category": "Hô hấp"
+  },
+  "ban-chan-dai-thao-duong": {
+    "disease_name": "Bàn chân đái tháo đường",
+    "category": "Nội tiết - Đái tháo đường"
+  },
+  "bang-huyet-sau-sinh": {
+    "disease_name": "Băng huyết sau sinh",
+    "category": "Sản phụ khoa"
+  },
+  "bang-quang-tang-hoat": {
+    "disease_name": "Bàng quang tăng hoạt",
+    "category": "Tiết niệu"
+  }
+}
